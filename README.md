@@ -11,6 +11,7 @@ docker-compose up -d
 Create topics in kafka using below commands
 
 ```bash
+docker ps
 docker exec -it <container_id_of_kafka> bash
 kafka-topics --create --topic chat-room --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 ```
